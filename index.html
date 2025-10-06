@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Chibi Tatiane — Portfólio Interativo</title>
+<link rel="icon" href="favicon.png">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+:root {
+  --lilas: #CFA8FF;
+  --lilas-esc: #A781FF;
+  --bg-gradient: linear-gradient(135deg, #000000, #BFFF00);
+  --text: #FFFFFF;
+  --card: #1c1c1c;
+  --footer-text: #000000;
+  --icon-hover: #BFFF00;
+}
+
+body {
+  background: var(--bg-gradient);
+  color: var(--text);
+  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+
+header, footer { text-align:center; padding:2rem 1rem; }
+header h1 { font-size:2rem; }
+header p.lead { font-size:1rem; }
+
+.cta { background: linear-gradient(90deg, var(--lilas-esc), var(--lilas)); color:#fff; border:0; padding:0.6rem 1.2rem; transition:0.2s; }
+.cta:hover { transform: scale(1.05); box-shadow:0 0 10px var(--lilas); }
+
+.card-chibi {
+  background: var(--card);
+  border: 0;
+  border-radius: 14px;
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.5s, box-shadow 0.5s;
+  cursor: pointer;
+}
+.card-chibi:hover { transform: translateY(-10px) scale(1.05); box-shadow: 0 10px 20px rgba(0,0,0,0.5); }
+.card-chibi img { max-height:200px; object-fit:contain; transition: transform 0.5s; }
+.card-chibi img:hover { transform: scale(1.1) rotate(-3deg); }
+
+section h3 { margin-bottom:1rem; color: var(--text); text-shadow:1px 1px 2px rgba(0,0,0,0.5); }
+
+.social-icon { display:inline-flex; align-items:center; gap:0.4rem; font-weight:bold; font-size:1rem; margin-right:1rem; }
+.social-icon img {
+  width:36px; height:36px; border-radius:50%; background-color:#fff; padding:4px; transition: transform 0.3s, box-shadow 0.3s;
+}
+.social-icon:hover img { transform: scale(1.4) rotate(-10deg); box-shadow:0 0 10px var(--icon-hover); }
+
+#formAlert {
+  display:none;
+  padding:1rem 1.5rem;
+  border-radius:10px;
+  font-weight:bold;
+  margin-top:1rem;
+  text-align:center;
+  font-size:1rem;
+  animation: popin 0.5s forwards;
+}
+@keyframes popin { 0% { transform: scale(0.5); opacity:0; } 100% { transform: scale(1); opacity:1; } }
+
+.alert-success { background: #CFA8FF; color: #fff; }
+.alert-error { background: #FF6B6B; color: #fff; }
+
+footer { color: var(--footer-text); background-color: #FFFFFF90; border-top:1px solid #CCC; padding:2rem 1rem; }
+
+#contato input.form-control-lg,
+#contato textarea.form-control-lg { font-size:1.1rem; padding:0.8rem; }
+
+@media (max-width:768px) {
+  .card-chibi img { max-height:150px; }
+  header h1 { font-size:1.8rem; }
+  .lead { font-size:1rem; }
+  .social-icon img { width:28px; height:28px; }
+}
+@media (max-width:480px) {
+  .card-chibi { padding:0.5rem; }
+  .card-chibi img { max-height:120px; }
+  .social-icon { font-size:0.9rem; gap:0.2rem; }
+  .cta { font-size:0.9rem; padding:0.5rem 1rem; }
+}
+</style>
+</head>
+<body>
+
+<header class="container text-center">
+  <div class="mb-3"><img alt="Logo Chibi" width="100" height="100" src="logo.png"></div>
+  <h1>Chibi Tatiane</h1>
+  <p class="lead">Desenhos digitais fofos no estilo chibi — perfeitos para avatares, presentes e perfis!</p>
+  <a href="#galeria" class="btn cta">Ver Galeria</a>
+</header>
+
+<main class="container my-5">
+  <!-- Galeria -->
+  <section id="galeria" class="mb-5">
+    <h3>Galeria Chibi</h3>
+    <div class="row g-3">
+      <div class="col-6 col-md-4"><div class="card-chibi"><img src="chibimedica.png" alt="Chibi Médica" class="img-fluid rounded"></div></div>
+      <div class="col-6 col-md-4"><div class="card-chibi"><img src="chibi.png" alt="Chibi 2" class="img-fluid rounded"></div></div>
+      <div class="col-6 col-md-4"><div class="card-chibi"><img src="chibi8.png" alt="Chibi 3" class="img-fluid rounded"></div></div>
+    </div>
+  </section>
+
+  <!-- Sobre -->
+  <section id="sobre" class="mb-5">
+    <h3>Sobre</h3>
+    <p>Sou Tatiane, artista apaixonada pelo universo chibi e kawaii! 💕 Crio ilustrações digitais com traços leves e cores suaves, especialmente em tons de lilás e branco. Cada desenho é feito com dedicação para transmitir alegria e doçura.</p>
+  </section>
+
+  <!-- Contato -->
+  <section id="contato" class="mb-5">
+    <h3>Contato</h3>
+    <form id="contactForm" class="row g-3">
+      <div class="col-12 col-md-6">
+        <label class="form-label">Nome</label>
+        <input type="text" name="nome" class="form-control form-control-lg" placeholder="Digite seu nome" required>
+      </div>
+      <div class="col-12 col-md-6">
+        <label class="form-label">E-mail</label>
+        <input type="email" name="email" class="form-control form-control-lg" placeholder="Digite seu e-mail" required>
+      </div>
+      <div class="col-12">
+        <label class="form-label">Mensagem</label>
+        <textarea name="mensagem" rows="6" class="form-control form-control-lg" placeholder="Escreva sua mensagem" required></textarea>
+      </div>
+      <div class="col-12 text-center">
+        <button type="submit" class="btn cta btn-lg">Enviar</button>
+      </div>
+    </form>
+    <div id="formAlert"></div>
+  </section>
+
+  <!-- Redes Sociais -->
+  <section class="mb-5">
+    <h3>Redes Sociais</h3>
+    <p>Siga e acompanhe os novos desenhos:</p>
+    <p>
+      <a href="https://www.instagram.com" target="_blank" class="social-icon">
+        <img src="https://i.postimg.cc/52gMZrtZ/instagram-chibi.png" alt="Instagram"> Instagram
+      </a>
+      <a href="https://www.tiktok.com" target="_blank" class="social-icon">
+        <img src="https://i.postimg.cc/d0fD5jFZ/tiktok-chibi.png" alt="TikTok"> TikTok
+      </a>
+      <a href="https://www.pinterest.com" target="_blank" class="social-icon">
+        <img src="https://i.postimg.cc/3RKhK5t9/pinterest-chibi.png" alt="Pinterest"> Pinterest
+      </a>
+    </p>
+  </section>
+</main>
+
+<footer>
+  <small>© <span id="year"></span> Chibi Criado Por Tatiane Nascimento — Arte Digital Fofa</small>
+</footer>
+
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+
+// Formulário sem servidor externo (simula envio)
+document.getElementById('contactForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  const form = this;
+  const alertDiv = document.getElementById('formAlert');
+
+  setTimeout(()=>{
+    alertDiv.style.display = 'block';
+    alertDiv.className = 'alert-success';
+    alertDiv.textContent = '💌 Sua mensagem foi enviada com sucesso!';
+    form.reset();
+    setTimeout(()=>{ alertDiv.style.display='none'; }, 5000);
+  }, 500);
+});
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

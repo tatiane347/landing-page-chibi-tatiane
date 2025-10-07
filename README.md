@@ -51,3 +51,34 @@ aqui esta do repositorio github:
 
 ## 🖼️ Estrutura de Pastas
 
+---
+
+## 💡 Sobre o Projeto
+
+Sou **Tatiane Nascimento**, artista e desenvolvedora apaixonada por unir **arte e tecnologia**.  
+Este projeto faz parte do meu portfólio como criadora de conteúdo digital, mostrando meu estilo único de ilustrações chibi.
+
+---
+
+## 🌐 Visualização Online
+
+Você pode visualizar o projeto localmente abrindo o arquivo `index.html` no navegador  
+ou hospedá-lo gratuitamente no **GitHub Pages** com o seguinte link (após subir o repositório):
+
+👉 `https://seuusuario.github.io/chibi-tatiane`
+
+---
+
+## 📬 Contato
+
+💌 **E-mail:** tatiane@example.com  
+📷 **Instagram:** [@chibi.tatiane](https://instagram.com/)  
+🎵 **TikTok:** [@chibi.tatiane](https://tiktok.com/)  
+📌 **Pinterest:** [@chibi.tatiane](https://pinterest.com/)
+
+---
+
+### 💖 Créditos
+Desenvolvido e ilustrado por **Tatiane Nascimento**  
+© 2025 — Todos os direitos reservados.
+

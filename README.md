@@ -39,13 +39,13 @@ A página foi desenvolvida com foco em **design limpo, responsivo e profissional
 💜 Tema em lilás e verde-limão, inspirado na minha identidade visual  
 aqui esta meu perfil linkdn :
  https://www.linkedin.com/in/tatiane-nascimento-68b0622bb/
-aqui esta meu site da App Clima Tempo
+aqui esta meu Landing Page Tatiane Desenho Chibi
 https://tatiane347.github.io/landing-page-chibi-tatiane/#galeria
 Se algum recrutador de empresa ou contratante para projetos freelancer quiser me contratar para trabalho entre em Email:tatianen25@gmail.com
 whatsapp:11910526709
 aqui esta do repositorio github:
-[https://github.com/tatiane347/app-clima](https://github.com/tatiane347/landing-page-chibi-tatiane/new/main?filename=README.md)
-
+(https://github.com/tatiane347/landing-page-chibi-tatiane/new/main?filename=README.md)
+](https://github.com/tatiane347/landing-page-chibi-tatiane/tree/main)
 
 ---
 
